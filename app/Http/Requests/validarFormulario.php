@@ -13,7 +13,7 @@ class validarFormulario extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,8 @@ class validarFormulario extends FormRequest
     public function rules()
     {
         return [
-            //
+            'inputEmail'=>'required',
+            'inputPass'=>'required '
         ];
     }
 }
